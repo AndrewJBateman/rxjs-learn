@@ -23,7 +23,8 @@ import "rxjs/add/operator/pluck";
     .pluck('first')
     .subscribe((x:any) => addItem(x));
 
-    //using the skipUntil operator
+    //create an observable
+    //uses the skipUntil operator 
     /*var observable1 = Observable.create((data:any) => {
         var i = 1
         setInterval(() => {
