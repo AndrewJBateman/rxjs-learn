@@ -1,6 +1,6 @@
 # RxJS Learn
 
-Practise using Reactive X with javascript (RxJS) without using a framework such as angular. [Webpack](https://webpack.js.org/) is used to bundle this javascript application, requiring a webpack.config.js file with boilerplate code.
+Practise using Reactive X with javascript (RxJS) without using a framework such as angular. [Webpack](https://webpack.js.org/) is used to bundle this javascript application.
 
 *** Note: to open web links in a new window use: _ctrl+click on link_**
 
@@ -22,10 +22,10 @@ RxJS is an API for asynchronous programming using observables. It includes:
 1. streams (values or events emitted over time)
 2. observables (facilitates the stream) and observers
 3. subscriptions (a disposable resource, such as the execution of an Observable)
-4. subjects (behaviour, replay, async: different types of observable) and
+4. subjects (behaviour, replay (emit old values to new subscribers), async: different types of observable) and
 5. operators (methods you can use on Observables and Subjects).
 
-**Webpack** is a static module bundler for modern JavaScript applications. When webpack processes your application, it internally builds a dependency graph which maps every module your project needs and generates one or more bundles. _Since version 4.0.0, webpack does not require a configuration file.
+**Webpack** is a static module bundler for modern JavaScript applications. When webpack processes your application, it internally builds a dependency graph which maps every module your project needs and generates one or more bundles. _Since version 4.0.0, webpack does not require a configuration file for default configurations. However in this case a webpack.config.js file was required to extend the project functionality.
 
 ## Screenshots
 
@@ -35,7 +35,7 @@ RxJS is an API for asynchronous programming using observables. It includes:
 
 * [RxJS v6.3.2](https://rxjs.dev/) used to handle datastreams and propagation of change using observables.
 
-* [webpack v4.19.1](https://webpack.js.org/)
+* [webpack v4.19.1](https://webpack.js.org/) to bundle the module, including dependensies into a single javascript file to be pulled in by the index.html file.
 
 ## Setup
 
