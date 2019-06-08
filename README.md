@@ -33,7 +33,7 @@ RxJS is an API for asynchronous programming using observables. It includes:
 
 ## Technologies
 
-* [RxJS v6.3.2](https://rxjs.dev/) used to handle datastreams and propagation of change using observables.
+* [RxJS v6.5.2](https://rxjs.dev/) used to handle datastreams and propagation of change using observables.
 
 * [webpack v4.19.1](https://webpack.js.org/) to bundle the module, including dependensies into a single javascript file to be pulled in by the index.html file.
 
@@ -81,7 +81,7 @@ function addItem(val:any) {
 
 ## Status & To-Do List
 
-* Status: very simple working app.
+* Status: Working.
 
 * To-Do: Code could be expanded to learn about other methods in RxJS.
 
@@ -91,4 +91,4 @@ function addItem(val:any) {
 
 ## Contact
 
-Created by [ABateman](https://www.andrewbateman.org) - feel free to contact me!
+Repo created by [ABateman](https://www.andrewbateman.org) - feel free to contact me!
