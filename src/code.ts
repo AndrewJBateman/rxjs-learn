@@ -6,7 +6,7 @@ import "rxjs/add/operator/pluck";
 //using the map operator (note use of pipe function in new version 6)
 Observable
 	.create((observer:any) => {
-  observer.next('Here is a list of names')
+    observer.next('Here is a list of names')
 	})
   .pipe(map((val:any) => val.toUpperCase()))
   .subscribe((x:any) => addItem(x));
@@ -17,7 +17,7 @@ Observable
     { first: 'Jane', last: 'Bates', age: '34'},
     { first: 'John', last: 'Kent', age: '36'},
   ])
-	.pluck('last') // changed from 'first'
+	.pluck('first') // changed from 'last'
   .subscribe((x:any) => addItem(x));
 
 // function for showing the values:

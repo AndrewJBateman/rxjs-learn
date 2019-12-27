@@ -29,7 +29,7 @@ RxJS is an API for asynchronous programming using observables. It includes:
 
 ## Screenshots
 
-![Example screenshot](./img/rxjs-observables.png).
+![Example screenshot](./img/rxjs.png).
 
 ## Technologies
 
