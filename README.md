@@ -1,21 +1,24 @@
-# RxJS Learn
+# :zap: RxJS Learn
 
-Practise using Reactive X with javascript (RxJS) without using a framework such as angular. [Webpack](https://webpack.js.org/) is used to bundle this javascript application.
+* Practise using Reactive X with javascript (RxJS) without using a framework such as angular. [Webpack](https://webpack.js.org/) is used to bundle this javascript application.
 
 *** Note: to open web links in a new window use: _ctrl+click on link_**
 
-## Table of contents
+## :page_facing_up: Table of contents
 
-* [General info](#general-info)
-* [Screenshots](#screenshots)
-* [Technologies](#technologies)
-* [Setup](#setup)
-* [Features](#features)
-* [Status](#status)
-* [Inspiration](#inspiration)
-* [Contact](#contact)
+* [:zap: RxJS Learn](#zap-rxjs-learn)
+  * [:page_facing_up: Table of contents](#page_facing_up-table-of-contents)
+  * [:books: General info](#books-general-info)
+  * [:camera: Screenshots](#camera-screenshots)
+  * [:signal_strength: Technologies](#signal_strength-technologies)
+  * [:floppy_disk: Setup](#floppy_disk-setup)
+  * [:computer: Code Examples](#computer-code-examples)
+  * [:cool: Features](#cool-features)
+  * [:clipboard: Status & To-Do List](#clipboard-status--to-do-list)
+  * [:clap: Inspiration](#clap-inspiration)
+  * [:envelope: Contact](#envelope-contact)
 
-## General info
+## :books: General info
 
 RxJS is an API for asynchronous programming using observables. It includes:
 
@@ -27,21 +30,20 @@ RxJS is an API for asynchronous programming using observables. It includes:
 
 **Webpack** is a static module bundler for modern JavaScript applications. When webpack processes your application, it internally builds a dependency graph which maps every module your project needs and generates one or more bundles. _Since version 4.0.0, webpack does not require a configuration file for default configurations. However in this case a webpack.config.js file was required to extend the project functionality.
 
-## Screenshots
+## :camera: Screenshots
 
 ![Example screenshot](./img/rxjs.png).
 
-## Technologies
+## :signal_strength: Technologies
 
-* [RxJS v6.5.2](https://rxjs.dev/) used to handle datastreams and propagation of change using observables.
+* [RxJS v6](https://rxjs.dev/) used to handle datastreams and propagation of change using observables.
+* [webpack v4](https://webpack.js.org/) to bundle the module, including dependensies into a single javascript file to be pulled in by the index.html file.
 
-* [webpack v4.19.1](https://webpack.js.org/) to bundle the module, including dependensies into a single javascript file to be pulled in by the index.html file.
-
-## Setup
+## :floppy_disk: Setup
 
 Run `npm start` for a dev server. Navigate to `http://localhost:8080/`. The app will automatically reload if you change any of the source files.
 
-## Code Examples
+## :computer: Code Examples
 
 ```javascript
 import { Observable } from "rxjs/Observable";
@@ -62,7 +64,7 @@ Observable.create((observer:any) => {
     { first: 'Jane', last: 'Bates', age: '34'},
     { first: 'John', last: 'Kent', age: '36'},
   ])
-  .pluck('last') // changed from 'first'
+  .pluck('first') // changed from 'last'
   .subscribe((x:any) => addItem(x));
 
 // function for showing the values:
@@ -75,20 +77,19 @@ function addItem(val:any) {
 
 ```
 
-## Features
+## :cool: Features
 
-* Changing the value in the [pluck](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-pluck) method means a different property is selected from the nested object.  
+* Changing the value in the [pluck](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-pluck) method means a different property is selected from the nested object.
 
-## Status & To-Do List
+## :clipboard: Status & To-Do List
 
 * Status: Working.
-
 * To-Do: Code could be expanded to learn about other methods in RxJS.
 
-## Inspiration
+## :clap: Inspiration
 
 [Gary Simon's 'A Comprehensive RxJS Tutorial - Learn ReactiveX for JavaScript'](https://coursetro.com/courses/25/A-Comprehensive-RxJS-Tutorial---Learn-ReactiveX-for-JavaScript-)
 
-## Contact
+## :envelope: Contact
 
-Repo created by [ABateman](https://www.andrewbateman.org) - feel free to contact me!
+* Repo created by [ABateman](https://www.andrewbateman.org) - you are welcome to [send me a message](https://andrewbateman.org/contact)
