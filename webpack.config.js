@@ -18,5 +18,9 @@ module.exports = {
   output: {   //otherwise defaults to './dist/main.js'
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist')
-  }
+  },
+  performance: {
+    maxAssetSize: 100000,
+  },
+  mode: 'development'
 };

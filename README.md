@@ -1,6 +1,9 @@
 # :zap: RxJS Learn
 
-* Practise using Reactive X with javascript (RxJS) without using a framework such as angular. [Webpack](https://webpack.js.org/) is used to bundle this javascript application.
+* Practise using Reactive X with javascript (RxJS) without using a framework such as angular.
+* [Webpack](https://webpack.js.org/) is used to bundle this javascript application.
+* Updates due to rxjs updates - pluck requires pip, Observer.create is now new Observer.
+* Webpack config. & package.json files updated to remove errors
 
 *** Note: to open web links in a new window use: _ctrl+click on link_**
 
@@ -37,11 +40,11 @@ RxJS is an API for asynchronous programming using observables. It includes:
 ## :signal_strength: Technologies
 
 * [RxJS v6](https://rxjs.dev/) used to handle datastreams and propagation of change using observables.
-* [webpack v4](https://webpack.js.org/) to bundle the module, including dependensies into a single javascript file to be pulled in by the index.html file.
+* [webpack v5](https://webpack.js.org/) to bundle the module, including dependensies into a single javascript file to be pulled in by the index.html file.
 
 ## :floppy_disk: Setup
 
-Run `npm start` for a dev server. Navigate to `http://localhost:8080/`. The app will automatically reload if you change any of the source files.
+* Run `npm run start:dev` for a dev server. Navigate to `http://localhost:8080/`. The app will automatically reload if you change any of the source files.
 
 ## :computer: Code Examples
 
@@ -52,20 +55,20 @@ import { from } from "rxjs/Observable/from";
 import "rxjs/add/operator/pluck";
 
 //using the map operator (note use of pipe function in new version 6)
-Observable.create((observer:any) => {
-  observer.next('Here is a list of names')
+new Observable((observer: any) => {
+  observer.next("Here is a list of superheroes");
 })
-  .pipe(map((val:any) => val.toUpperCase()))
-  .subscribe((x:any) => addItem(x));
+  .pipe(map((val: any) => val.toUpperCase()))
+  .subscribe((x: any) => addItem(x));
 
-  //using the pluck operator
-  from([
-    { first: 'Gary', last: 'Simon', age: '32'},
-    { first: 'Jane', last: 'Bates', age: '34'},
-    { first: 'John', last: 'Kent', age: '36'},
-  ])
-  .pluck('first') // changed from 'last'
-  .subscribe((x:any) => addItem(x));
+//using the pluck operator
+from([
+  { first: "Gary", last: "Simon", age: "32" },
+  { first: "Jane", last: "Bates", age: "34" },
+  { first: "John", last: "Kent", age: "36" },
+])
+  .pipe(pluck("first"))
+  .subscribe((x: any) => addItem(x));
 
 // function for showing the values:
 function addItem(val:any) {
@@ -83,13 +86,17 @@ function addItem(val:any) {
 
 ## :clipboard: Status & To-Do List
 
-* Status: Working.
+* Status: Working. Updated april 2021
 * To-Do: Code could be expanded to learn about other methods in RxJS.
 
 ## :clap: Inspiration
 
-[Gary Simon's 'A Comprehensive RxJS Tutorial - Learn ReactiveX for JavaScript'](https://coursetro.com/courses/25/A-Comprehensive-RxJS-Tutorial---Learn-ReactiveX-for-JavaScript-)
+* [Gary Simon's 'A Comprehensive RxJS Tutorial - Learn ReactiveX for JavaScript'](https://coursetro.com/courses/25/A-Comprehensive-RxJS-Tutorial---Learn-ReactiveX-for-JavaScript-)
+
+## :file_folder: License
+
+* This project is licensed under the terms of the MIT license.
 
 ## :envelope: Contact
 
-* Repo created by [ABateman](https://www.andrewbateman.org) - you are welcome to [send me a message](https://andrewbateman.org/contact)
+* Repo created by [ABateman](https://github.com/AndrewJBateman), email: gomezbateman@yahoo.com
