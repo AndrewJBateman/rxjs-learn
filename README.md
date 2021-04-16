@@ -1,8 +1,8 @@
 # :zap: RxJS Learn
 
-* Practise using Reactive X with javascript (RxJS) without using a framework such as angular.
+* Practise using Reactive X with javascript (RxJS) without using a framework such as Angular.
 * [Webpack](https://webpack.js.org/) is used to bundle this javascript application.
-* Updates due to rxjs updates - pluck requires pip, Observer.create is now new Observer.
+* Updates due to rxjs updates - pluck requires pipe, Observer.create is now new Observer.
 * Webpack config. & package.json files updated to remove errors
 
 *** Note: to open web links in a new window use: _ctrl+click on link_**
@@ -40,7 +40,7 @@ RxJS is an API for asynchronous programming using observables. It includes:
 ## :signal_strength: Technologies
 
 * [RxJS v6](https://rxjs.dev/) used to handle datastreams and propagation of change using observables.
-* [webpack v5](https://webpack.js.org/) to bundle the module, including dependensies into a single javascript file to be pulled in by the index.html file.
+* [webpack v5](https://webpack.js.org/) to bundle the module, including dependencies into a single javascript file to be pulled in by the index.html file.
 
 ## :floppy_disk: Setup
 
