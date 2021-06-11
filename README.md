@@ -4,8 +4,12 @@
 * [Webpack](https://webpack.js.org/) is used to bundle this javascript application.
 * Updates due to rxjs updates - pluck requires pipe, Observer.create is now new Observer.
 * Webpack config. & package.json files updated to remove errors
+* **Note:** to open web links in a new window use: _ctrl+click on link_
 
-*** Note: to open web links in a new window use: _ctrl+click on link_**
+![GitHub repo size](https://img.shields.io/github/repo-size/AndrewJBateman/rxjs-learn?style=plastic)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/AndrewJBateman/rxjs-learn?style=plastic)
+![GitHub Repo stars](https://img.shields.io/github/stars/AndrewJBateman/rxjs-learn?style=plastic)
+![GitHub last commit](https://img.shields.io/github/last-commit/AndrewJBateman/rxjs-learn?style=plastic)
 
 ## :page_facing_up: Table of contents
 
